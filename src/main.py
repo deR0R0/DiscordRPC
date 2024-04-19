@@ -15,6 +15,10 @@ from multiprocessing import freeze_support
 #CPU:      vendor_id_raw (GenuineIntel)       brand_raw (Intel(R) Core???? @ ???GHz)   <- Remove @ ???Ghz         hz_advertised (2800000????) remove extra zeros by dividing by (1024*1024*1024)
 
 #Vars
+version = "v1.0.1"
+
+
+
 customSave1 = []
 customSave2 = []
 customSave3 = []
@@ -45,7 +49,17 @@ def program():
     checkForUpdates()
 
 def checkForUpdates():
+    global version
     print("Checking for Updates...")
+    latestVersion = requests.get("https://api.github.com/repos/der0r0/DiscordRPC/releases/latest").json()
+    latestVersion = latestVersion["name"]
+    if latestVersion == version:
+        clear()
+        print("You are up to date!")
+    else:
+        clear()
+        print(fore.RED + f"There is a new update available. https://github.com/deR0R0/DiscordRPC/releases/latest ({version} -> {latestVersion})")
+        time.sleep(7)
     time.sleep(3)
     clear()
 

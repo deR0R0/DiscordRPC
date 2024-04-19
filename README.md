@@ -7,6 +7,10 @@ Disclaimer!!!: This program uses your IP to determine your **nearby** location f
 
 The program will bug you about it though... D:
 
+## How to Download
+On the right, there should be releases. Click on the latest release and __***download the zip folder***__
+
+
 ## Use
 This program has already been turned into a .exe file for ease of use. (thanks PyInstaller!)
 
@@ -35,6 +39,7 @@ But, if you would like to use it with python, the libraries are down below.
 If you have any mode ideas, please go into "issues" and create an issue for a "New Mode".
 
 ## Other Stuff
+
 This program isn't really made for you to enter the wrong thing (but there are some error handling) please just enter information carefully!
 
 The program will loop the title and the update checker... multiprocesser 🙄

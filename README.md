@@ -7,6 +7,8 @@ Disclaimer!!!: This program uses your IP to determine your **nearby** location f
 
 The program will bug you about it though... D:
 
+Status: 🔵 (Done but will add requested features)
+
 ## How to Download
 On the right, there should be releases. Click on the latest release and __***download the zip folder***__
 

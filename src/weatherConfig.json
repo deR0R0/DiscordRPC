@@ -1,0 +1,15 @@
+{
+    "filledOut?": false,
+    "apiKey": null,
+    "displayLocation": null,
+    "displayLastUpdated": null,
+    "metric": null,
+    "temp": null,
+    "feelLike": null,
+    "condition": null,
+    "wind": null,
+    "wind_direction": null,
+    "pressure": null,
+    "aqi": null,
+    "uv": null
+}

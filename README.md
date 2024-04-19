@@ -78,7 +78,14 @@ Enter the button text and the url it will redirect you to when you click it.
 Congrats, you are done! You may save if you would like (or not)
 
 
+## Weather!!! (my fav)
 
+1. Go to [weatherapi.com](https://www.weatherapi.com/)
+2. Create an account
+3. Once you're at the dashboard, copy your API key
+4. Paste it into the program
+5. Answer either T/F in the prompts (it will ask you if you want to display a certain thing)
+6. Done :)
 
 ## Other Stuff
 

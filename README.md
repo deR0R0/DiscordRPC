@@ -1,6 +1,8 @@
 # DiscordRPC
 [![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?style=for-the-badge&logo=discord&logoWidth=20)](https://github.com/qwertyquerty/pypresence)
 
+This program (after extensive testing) is found to not be able to save data. Please do not use the save data feature! (Unless you download from src)
+
 A simple python program that changes your discord rich presence/game activity. 
 
 Disclaimer!!!: This program uses your IP to determine your **nearby** location for the weather mode. Nothing is stored/sent to my end. :)

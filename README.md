@@ -16,9 +16,14 @@ On the right, there should be releases. Click on the latest release and __***dow
 
 
 ## Use
-This program has already been turned into a .exe file for ease of use. (thanks PyInstaller!)
+1. Download zip file
+2. Unzip
+3. Download python (preferably from website but from microsoft store works too)
+4. Navigate to directory of the folder
+5. Run ```python -m pip install -r requirements.txt``` in command prompt
+6. Run the program
 
-But, if you would like to use it with python, the libraries are down below.
+Below is all the libraries used
 
 - pypresence
 - os
@@ -98,5 +103,12 @@ This program isn't really made for you to enter the wrong thing (but there are s
 The program will loop the title and the update checker... multiprocesser 🙄
 
 If any other issues arise, please create an issue or if you know how to fix it, you're welcome to send a pull request! :D
+
+
+## Changelog
+
+4/19/24 - v1.0.0 - Release
+4/19/24 - v1.0.1 - Minor Bugfix
+4/21/24 - v1.1.0 - Changed from .exe file to python file (pyinstaller doesn't allow of writing files... so no saving)
 
   

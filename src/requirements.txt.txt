@@ -1,0 +1,10 @@
+pypresence
+os
+sys
+time
+psutil
+json
+cpuinfo
+datetime
+colorama
+multiprocessing

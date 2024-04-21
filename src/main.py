@@ -15,7 +15,7 @@ from multiprocessing import freeze_support
 #CPU:      vendor_id_raw (GenuineIntel)       brand_raw (Intel(R) Core???? @ ???GHz)   <- Remove @ ???Ghz         hz_advertised (2800000????) remove extra zeros by dividing by (1024*1024*1024)
 
 #Vars
-version = "v1.0.1"
+version = "v1.1.0"
 
 
 
@@ -93,7 +93,6 @@ def loadData():
             print("Settings file created!")
     except Exception as e:
         print(e)
-        time.sleep(10000)
         
 
 
@@ -204,7 +203,7 @@ def loadData():
     print(f"Loading CPU Info... {fore.YELLOW}(this will take a moment if your computer is slow)")
     cpu = cpuinfo.get_cpu_info()
     #This wait is esstential!!! it makes sure the function doesn't loop while the program runs a subprocess to check the computer's stats! :> ~
-    time.sleep(5)
+    #time.sleep(5)
     clear()
     print("Loaded CPU Info...")
     time.sleep(2)

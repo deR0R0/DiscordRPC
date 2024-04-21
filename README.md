@@ -107,8 +107,8 @@ If any other issues arise, please create an issue or if you know how to fix it, 
 
 ## Changelog
 
-4/19/24 - v1.0.0 - Release
-4/19/24 - v1.0.1 - Minor Bugfix
-4/21/24 - v1.1.0 - Changed from .exe file to python file (pyinstaller doesn't allow of writing files... so no saving)
+- 4/19/24 - v1.0.0 - Release
+- 4/19/24 - v1.0.1 - Minor Bugfix
+- 4/21/24 - v1.1.0 - Changed from .exe file to python file (pyinstaller doesn't allow of writing files... so no saving)
 
   

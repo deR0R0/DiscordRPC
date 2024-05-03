@@ -1,6 +1,9 @@
 # DiscordRPC
 [![pypresence](https://img.shields.io/badge/using-pypresence-00bb88.svg?style=for-the-badge&logo=discord&logoWidth=20)](https://github.com/qwertyquerty/pypresence)
 
+# WAIT!
+Before you go, please do not use this! I will be making another one more optimized and user friendly! Just hold off for a little! :D
+
 A simple python program that changes your discord rich presence/game activity. 
 
 Disclaimer!!!: This program uses your IP to determine your **nearby** location for the weather mode. Nothing is stored/sent to my end. :)

@@ -5,7 +5,7 @@ from utils import *
 from .CPUandRAM import CPUandRAM
 
 # Config
-MAIN_MENU_TEXT = "cRPC by Robert Zhao"
+MAIN_MENU_TEXT = "Made by Robert Zhao"
 MAIN_MENU_OPTIONS = [
     "CPU & RAM Usage",
     "Settings",
@@ -24,6 +24,15 @@ class Main:
         if(incorrectInput):
             Logger.text_warn(Config.INVALID_OPTION)
 
+        # Giant Watermark, lol
+        Logger.text_normal("░█████╗░██████╗░██████╗░░█████╗░")
+        Logger.text_normal("██╔══██╗██╔══██╗██╔══██╗██╔══██╗")
+        Logger.text_normal("██║░░╚═╝██████╔╝██████╔╝██║░░╚═╝")
+        Logger.text_normal("██║░░██╗██╔══██╗██╔═══╝░██║░░██╗")
+        Logger.text_normal("╚█████╔╝██║░░██║██║░░░░░╚█████╔╝")
+        Logger.text_normal("░╚════╝░╚═╝░░╚═╝╚═╝░░░░░░╚════╝░")
+
+        # Show who made it and the version
         Logger.text_info(f"{MAIN_MENU_TEXT}")
         Logger.text_info(f"Current Version: {Config.CURRENT_VERSION}")
 

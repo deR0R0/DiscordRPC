@@ -3,7 +3,7 @@ from colorama import Fore as fore
 # General Stuff
 INVALID_OPTION = "Invalid Option!"
 CRUSAGE_CLIENT_ID = "1320878832164798504"
-CURRENT_VERSION = "v2.0.0"
+CURRENT_VERSION = "v2.0.1"
 LATEST_VERSION  = ""
 
 # Logger Stuff

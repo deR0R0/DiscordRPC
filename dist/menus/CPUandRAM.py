@@ -1,4 +1,5 @@
 import sys
+from time import time
 from threading import Thread
 
 sys.path.insert(1, sys.path[0].replace("menus", ""))
@@ -50,7 +51,7 @@ class CPUandRAM:
         Logger.clear()
 
         try:
-            delay = int(delay)
+            delay = float(delay)
         except ValueError:
             Logger.text_warn("Please enter a valid number!")
             Prompt.enter()
@@ -58,12 +59,12 @@ class CPUandRAM:
 
         # Try to make sure the input is > 0
         if delay < 1:
-            Logger.text_warn("Please put a number greater than 0!")
+            Logger.text_warn("Please put a number greater than or equal to 1!")
             Prompt.enter()
             return
 
         # Create object and handle exception when user enters invalid input
-        usage = CRUsage(int(delay))
+        usage = CRUsage(int(delay), int(time()))
         
         # Connect to discord
         match usage.connect():

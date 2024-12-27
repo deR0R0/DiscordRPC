@@ -7,8 +7,9 @@ sys.path.insert(1, sys.path[0].replace("menus", ""))
 from utils import *
 
 class CRUsage:
-    def __init__(self, delay: int):
+    def __init__(self, delay: int, st: int):
         self.delay = delay
+        self.startTime = st
         self.rpc = None
 
     def connect(self) -> any:
@@ -35,7 +36,7 @@ class CRUsage:
             ramUsage = self.getRamUsage()
 
             try:
-                self.rpc.update(state=f"RAM: {ramUsage}", details=f"CPU: {cpuUsage}%", large_image=img, large_text="CPU Levels")
+                self.rpc.update(state=f"RAM: {ramUsage}", details=f"CPU: {cpuUsage}%", start=self.startTime, large_image=img, large_text="CPU Levels")
             except PipeClosed:
                 Logger.log_warn("CRUsage", "Pipe Closed, attempting to reconnect...")
                 pass
@@ -52,9 +53,9 @@ class CRUsage:
         return psutil.cpu_percent()
     
     def getRamUsage(self):
-        total = psutil.virtual_memory().total / (1024 ** 3)
-        used = round(psutil.virtual_memory().total / (1024 ** 3), 2) * round((psutil.virtual_memory().percent / 100), 2)
-        return f"{used}/{total} MB"
+        total = round(psutil.virtual_memory().total / (1024 ** 3), 2)
+        used = round(total * (psutil.virtual_memory().percent / 100), 2)
+        return f"{used}/{total} GB"
 
 
     def stop(self):
